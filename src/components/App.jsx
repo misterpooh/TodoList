@@ -8,10 +8,8 @@ function App() {
     setItem(event.target.value);
   }
   function addItem() {
-    setItems((prevItems) => {
-      return [...prevItems, item];
-    });
-    return;
+    setItems((prevItems) => [...prevItems, item]);
+    setItem("");
   }
 
   return (
