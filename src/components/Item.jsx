@@ -2,9 +2,13 @@ import React from "react";
 
 function Item(props) {
   return (
-    <ul>
+    <div
+      onClick={() => {
+        props.onChecked(props.id);
+      }}
+    >
       <li>{props.item}</li>
-    </ul>
+    </div>
   );
 }
 
